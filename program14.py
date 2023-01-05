@@ -1,15 +1,14 @@
+def printSeriesIncreasing(ch,n):
+    for i in range(1,n+1,1):
+        print(ch*i)
+    return None
+def printSeriesDecreasing(ch,n):
+    for i in range(1,0,-1):
+        print(ch*i)
+    return None
 
-string='''
-practice problem for list comprehension in python.
-'''
-
-
-
-
-##WordList=string.split(' ')
-##ans=[i for i in WordList if len(i)==3]
-##print(*ans)
-
-WordList=string.split(' ')
-ans=[i for i in WordList if len(i.strip('\n'))==8]
-print(*ans)
+inpch=input("Enter a charecter:")
+inpNum=int(input("Enter a no:"))
+printSeriesIncreasing(inpch,inpNum)
+print('-'*40)
+printSeriesDecreasing(inpch,inpNum)

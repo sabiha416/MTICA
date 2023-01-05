@@ -1,7 +1,10 @@
-coord = [(3,9),(2,4)]
-print('first tuple: {0[0]},{0[1]},second tuple: {1[0]},{1[1]}'.format(*coord))
+num1=int(input("Enter a number:"))
+num2=int(input("Enter a number:"))
 
-print('{:#<30}'.format('Apple'))
-print('{:*>30}'.format('Apple'))
-print('{:^30}'.format('Apple'))
-print('{:*^30}'.format('Apple'))
+try:
+    res=num1/num2
+except ZeroDivisionError:
+    print("Division by zero not allowed")
+else:
+    print(num1,'/' ,num2, '=',res)
+print('thanks')

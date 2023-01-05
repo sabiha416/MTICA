@@ -1,8 +1,24 @@
-m=[[1,2],[3,4],[5,6],[7,8]]
-ans=[]
-for row in range(len(m[0])):
-    temp=[]
-    for col in range(len(m)):
-        temp.append(m[col][row])
-    ans.append(temp)
-print(ans)
+def div(a,b):
+    assert( isinstance(a,int) or isinstance(a,float)),\
+            'first Argument should be either Integer or float'
+    assert( isinstance(b,int) or isinstance(b,float)),\
+            'second Argument should be either Integer or float'       
+    assert (b!=0),"Division by zero is not defined"
+    return a/b
+
+try:
+    print (div(55,0))
+except AssertionError as obj:
+    print(obj)
+try:
+    print (div(20,3))
+except AssertionError as obj:
+    print(obj)
+try:
+    print (div('hello',20))
+except AssertionError as obj:
+    print(obj)
+try:
+    print (div(20,'hello'))
+except AssertionError as obj:
+    print(obj)

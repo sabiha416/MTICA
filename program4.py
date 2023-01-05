@@ -1,18 +1,17 @@
-##ans=[]
-##for i in range(100,111):
-##    temp=[]
-##    for j in range(1,10):
-##        if i%j==0:
-##            temp.append(j)
-##    ans.append([i,max(temp)])
-##print(ans)
+def div(a,b):       
+    assert (b!=0),"Division by zero is not defined"
+    return a/b
 
+try:
+    print (div(55,0))
+except AssertionError as obj:
+    print(obj)
+try:
+    print (div(20,3))
+except AssertionError as obj:
+    print(obj)
+try:
+    print (div(100,20))
+except AssertionError as obj:
+    print(obj)
 
-##ans=[]
-##for i in range(100,111):
-##    ans.append([i,max([j for j in range(1,10) if i%j==0 ])])
-##print(ans)
-
-
-ans=[[i,max([ j for j in range(1,10) if i%j==0 ])] for i in range(100,110)]
-print(ans)

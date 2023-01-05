@@ -1,12 +1,6 @@
-##ans=[]
-##for i in range(1,1001):
-##    if i%8==0:
-##        ans.append(i)
-##print(ans)
+num1=int(input("enter a no:"))
+if num1%2== 0:
+    print(num1, 'is even')
 
-
-print([i for i in range(1,1001) if i%8==0])
-
-
-ans=[i for i in range(1,1001) if i%8==0]
-print(ans)
+if num1%2== 1:
+    print("we learnt if keyword")

@@ -1,10 +1,14 @@
-string='''
-practice problems for list com pre hension in python.
-'''
-
-wordLst=string.split(' ')
-#print(wordLst)
-wordLst=[i.strip("\n") for i in wordLst]
-#print(wordLst)
-ans={i:i[::-1] for i in wordLst}
-print(ans)
+def Factorial(num):
+    assert(num>=0),"factorial of negative is not defined!"
+    if num==0:
+        return 1
+    else:
+        return num*Factorial(num-1)
+try:
+    print(Factorial(-45))
+except Exception as obj:
+    print(obj)
+try:
+    print(Factorial(45))
+except Exception as obj:
+    print(obj)        

@@ -1,10 +1,16 @@
-inp=input()
+def checkEven(num1):
+    if num1%2==0:
+        return "Even"
+def checkOdd(num1):
+    if num1%2==1:
+        return "Odd"
+    return None
 
-ans=[]
-for i in inp:
-    if i in '0123456789':
-        ans.append(i)
-print(*ans)
+num=int(input("enter a number:"))
+x=checkEven(num)
+y=checkOdd(num)
+print("x=",x)
+print("y=",y)
 
-ans=[]        
-print(*ans)
+print(checkEven(num))
+print(checkOdd(num))

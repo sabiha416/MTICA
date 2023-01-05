@@ -1,11 +1,17 @@
-string=input()
+def checkEvenOdd(num1):
+    assert(num1>0),"Negative numbers"
+    if num1%2==0:
+        return "Even"
+    else:
+        return "Odd"
 
-ans=[]
-for i in string:
-    if i in 'AEIOUaeiou':
-        ans.append(i)
-print(*ans)
+
+for i in range(3):
+    num=int(input("Enter a no:"))
+    try:
+        print(num,"is",checkEvenOdd(num))
+    except AssertionError as ob:
+        print(ob)
+        
 
 
-ans=[]
-print(*ans)

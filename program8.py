@@ -1,8 +1,26 @@
-import time
+a=[11,'python','c',12.6,34,21]
+##b=a.copy()
+##print(b)
 
-inpNum =int(input("Enter a no: "))
-start=time.time()
-for i in range(inpNum):
-    print("i=",i,"^2=",i*i)
-print("Time taken by loop:",
-      (time.time()-start)*100000)
+
+##temp=a[:]
+##print(temp)
+
+
+##c=[]
+##for i in a:
+##    c.append(i)
+##print(c)
+
+
+##d=[i for i in a]
+##print(d)
+
+
+e=[]
+stop=len(a)
+start=0
+while start<stop:
+    e.append(a[start])
+    start +=1
+print(e)
