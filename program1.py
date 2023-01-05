@@ -1,14 +1,17 @@
-def printSeriesIncreasing(ch,n):
-    for i in range(1,n+1,1):
-        print(ch*i)
-    return None
-def printSeriesDecreasing(ch,n):
-    for i in range(1,0,-1):
-        print(ch*i)
-    return None
+'''
+This module covers 10th day training of MCA
 
-inpch=input("Enter a charecter:")
-inpNum=int(input("Enter a no:"))
-printSeriesIncreasing(inpch,inpNum)
-print('-'*40)
-printSeriesDecreasing(inpch,inpNum)
+'''
+def funAdd(x,y):
+    '''
+this function takes two integer arguments and returns sum if it sabiha thins triple quote is for comment which is wrong
+'''
+    temp=x+y
+    return temp
+
+inpNum1=int(input())
+inpNum2=int(input())
+print(funAdd(inpNum1,inpNum2))
+
+
+#help(funAdd)

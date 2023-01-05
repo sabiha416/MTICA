@@ -1,16 +1,19 @@
-##x1=5
-##y1=5
-##x2='Hello'
-##y2='Hello'
-##x3=[1,2,3]
-##y3=[1,2,3]
-##print(x1 is not y1)
-##
-##print(x2 is y2)
-##
-##print(x3 is y3)
-
-
-print(True and True)
-print(True and False)
-print( not True)
+import sqlite3
+carData= [
+    (1, 'Audi', 52642),
+    (2, 'Mercedes', 52642),
+    (3, 'Skoda', 9000),
+    (4, 'Volvo', 29000),
+    (5, 'Bentley', 35000),
+    (6, 'citroen', 21000),
+    (7, 'Hummer', 41400),
+    (8, 'Volkswagen', 54906)
+     ]
+con=sqlite3.connect('mtica.db')
+cur=con.cursor()
+cur.execute("DROP TABLE IF EXISTS cars")
+cur.execute("CREATE TABLE cars(Id INT,Name TEXT,price INT)")
+cur.executemany("INSERT INTO cars values(?,?,?)",carData)
+con.commit()
+con.close()
+print("values inserted.")

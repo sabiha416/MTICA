@@ -1,12 +1,11 @@
-x=10
-y=4
-print('x=',x,'y=',y,'x&y=',x&y)
-print('x=',x,'y=',y,'x|y=',x|y)
-print('x=',x,'~x',~x)
-print('x=',x,'y=',y,'x^y=',x^y)
-print('x=',x,'x>>2',x>>2)
-print('x=',x,'x<<2',x<<2)
-
-
-
-
+import sqlite3 as lite
+con=lite.connect('mtica.db')
+cur=con.cursor()
+cur.execute('''
+DELETE FROM Cars
+WHERE Name='Sabiha'
+''')
+con.commit()
+con.close()
+print("Data Deleted")
+     

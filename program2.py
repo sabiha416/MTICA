@@ -1,18 +1,16 @@
-def printSeriesDecreasing(ch,n):
-    assert isinstance(ch,str),"first argument should be string"
-    assert isinstance(n,int),"second argument should be string"
-
-    for i in range(n,0,-1):
-        print(ch*i)
-    return None
+def fun(str1):
+    print(str1)
+    return
+fun("I'm first call to user defined function!")
+fun("Again second call to the same function")
 
 
+def printme(srt1,n):
+    n[0]='sabiha'
+    print(str1,n)
+    return
 
-inpch=input("Enter a charecter:")
-inpNum=int(input("Enter a no:"))
+x=['sabiha','joshna']
+print("Wakeup",x)
+print('x:',x)
 
-print('-'*40)
-try:
-    print(printSeriesDecreasing(inpch,inpNum))
-except AssertionError as obj:
-    print(ob)

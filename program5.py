@@ -1,11 +1,14 @@
-def printSeries(ch,n):
-    sp='.'
-    for i in range(0,n):
-        print(sp*(n-i-1) +ch*(2*i+1)+sp*(n-i-1))
+
+def printDetail(Name,marks=40,Age=18):
+    print("Name:",Name)
+    print("Marks:",Marks)
+    print("Age:",Age)
     return None
 
+##printDetail()#error
+##printDetail('sabiha')
+printDetail('sabiha',87)
+printDetail(87,'sabiha')
 
 
-inpch=input()
-inpNum=int(input())
-printSeries(inpch,inpNum)
+printDetail(marks=87,name='sabiha')#Keyword argument

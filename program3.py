@@ -1,10 +1,18 @@
-def printSeries(n):
-    num=1
-    for i in range(1,n+1):
-        for j in range(i):
-            print(num,end='')
-            num+=1
-    return None
 
-inpNum=int(input())
-printSeries(inpNum)
+def printme(srt1,n):
+    n[0]='sabiha'
+    print(str1,n)
+    return
+
+x=['sabiha','joshna']
+print("Wakeup",x)
+print('x:',x)
+
+def changeMe(lstn):
+    lstn=['sabiha','joshna','jeevana']
+    print(lstn)
+    return
+lst=[1,4,11,55]
+print(changeMe(lst))
+print('lst:',lst)
+

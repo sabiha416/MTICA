@@ -1,10 +1,13 @@
-def printSeries(n):
-    num=1
-    for i in range(1,n+1):
-        for j in range(i):
-            print(i,end='')
-            num+=1
+
+def printDetail(Name,marks):
+    print("Name:",Name)
+    print("Marks:",Marks)
     return None
 
-inpNum=int(input())
-printSeries(inpNum)
+##printDetail()#error
+
+##printDetail('sabiha',87)
+printDetail(87,'sabiha')
+
+
+printDetail(marks=87,name='sabiha')#Keyword argument
