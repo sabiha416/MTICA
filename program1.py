@@ -1,12 +1,10 @@
-lst=[]
-while(True):
-    inpNum=int(input("Enter a value(0 to end):"))
-    if inpNum == 0:
-        break
-    else:
-        lst.append(inpNum)
-lst.sort()
+string='''
+practice problems for list com pre hension in python.
+'''
 
-print("min:",lst[0])
-print("max:",lst[-1])
-print("Avg:",round(sum(lst)/len(lst),1))
+wordLst=string.split(' ')
+print(wordLst)
+wordLst=[i.strip("\n") for i in wordLst]
+print(wordLst)
+ans={i:len(i) for i in wordLst}
+print(ans)
