@@ -1,16 +1,10 @@
-def fun(str1):
-    print(str1)
-    return
-fun("I'm first call to user defined function!")
-fun("Again second call to the same function")
+months={1:'january',2:'febrauary',3:'march',4:'april',5:'may',6:'june',7:'july',8:'august',9:'september',10:'october',11:'november',12:'december',}
 
+n=int(input())
 
-def printme(srt1,n):
-    n[0]='sabiha'
-    print(str1,n)
-    return
-
-x=['sabiha','joshna']
-print("Wakeup",x)
-print('x:',x)
-
+for count in range(n):
+    mn=int(input())
+    if mn>=1 and mn<=12:
+        print(months[mn])
+    else:
+        print("invalid")

@@ -1,18 +1,18 @@
+def findFrequency(s):
+    FrequencyDict=dict()
+    for i in s:
+        if i in FrequencyDict:
+            FrequencyDict[i]+=1
+        else:
+            FrequencyDict[i]=1
+    return FrequencyDict
+def formatOutput(d):
+    for i in sorted(d):
+        print(i,d[i])
+    
 
-def printme(srt1,n):
-    n[0]='sabiha'
-    print(str1,n)
-    return
 
-x=['sabiha','joshna']
-print("Wakeup",x)
-print('x:',x)
-
-def changeMe(lstn):
-    lstn=['sabiha','joshna','jeevana']
-    print(lstn)
-    return
-lst=[1,4,11,55]
-print(changeMe(lst))
-print('lst:',lst)
-
+n=int(input())
+for i in range(n):
+    inpstr=input()
+    formatOutput(findFrequency(inpstr))

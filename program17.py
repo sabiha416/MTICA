@@ -1,11 +1,11 @@
-def extract_Consonent(s):
-    n_Consonent=0
-    for i in s:
-        if i in 'bcdfghjkl':
-            n_Consonent+=1
-    return n_Consonent
+def printPattern(ch,n):
+    assert (n>0),'invalid'
+    for i in range(n,0,-1):
+        print(ch*i)
 
-
-str1=input()
-a=extract_Consonent(str1)
-print("no of Consonent in:'",str1,"' is",a)
+ch=input()
+n=int(input())
+try:
+    printPattern(ch,n)
+except AssertionError as ob:
+    print(ob)

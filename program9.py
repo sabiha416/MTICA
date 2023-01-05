@@ -1,9 +1,11 @@
-import sqlite3 as lite
-con=lite.connect('mtica.db')
+sample_dict = {
+    "name": "kelly",
+    "age":25,
+    "salary":8000,
+    "city": "New york"}
+keys=["name","salary"]
 
-cur=con.cursor()
-cur.execute("SELECT * FROM cars")
-rows=cur.fetchall()
-for row in rows:
-     print(row)
-     
+
+for k in keys:
+    sample_dict.pop(k)
+print(sample_dict)

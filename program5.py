@@ -1,14 +1,17 @@
 
-def printDetail(Name,marks=40,Age=18):
-    print("Name:",Name)
-    print("Marks:",Marks)
-    print("Age:",Age)
-    return None
+sampleDict = {
+    "class": {
+        "student": {
+             "name": "Mike",
+              "marks": {
+                  "physics":70,
+                  "history":80
+                }
+          }
+    }
+}
 
-##printDetail()#error
-##printDetail('sabiha')
-printDetail('sabiha',87)
-printDetail(87,'sabiha')
+print(sampleDict["class"]["student"]["marks"]["history"])
 
-
-printDetail(marks=87,name='sabiha')#Keyword argument
+                      
+                

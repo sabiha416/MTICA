@@ -1,11 +1,7 @@
-def count_Digit(s):
-    n_Digit=0
-    for i in s:
-        if i in '0123456789':
-            n_Digit+=1
-    return n_Digit
+def printPatern(ch,n):
+    for i in range(n+1):
+        print(ch*i)
 
-
-str1=input()
-a=count_Digit(str1)
-print("no of Digits in:'",str1,"' is",a)
+ch=input()
+n=int(input())
+printPatern(ch,n)
