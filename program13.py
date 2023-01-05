@@ -1,11 +1,10 @@
-def extract_vowel(s):
-    temp_vowel=''
-    for i in s:
-        if i in 'AEriUaeiou':
-            temp_vowel+=i
-    return temp_vowel
+##string=input()
+##
+##ans=[i for i in string if i not in 'AEIOUaeio']
+##print(ans)
 
 
-str1=input()
-a=extract_vowel(str1)
-print("vowels:",a)
+string='''practice problem for list comprehension in python.'''
+
+ans=[i for i in string if i not in 'AEIOUaeio']
+print(''.join(ans))

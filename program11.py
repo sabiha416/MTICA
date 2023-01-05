@@ -1,7 +1,5 @@
-def checkAnagram(s1,s2):
-    if sorted(s1)==sorted(s2):
-        return 'yes'
-    else:
-        return 'no'
-inp=input().split()
-print(checkAnagram(inp[0],inp[1]))
+ans=[]
+for i in range(900,1001):
+    if '6' in str(i):
+        ans.append(i)
+print(ans)
