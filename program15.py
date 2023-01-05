@@ -1,24 +1,20 @@
-class Number:
-    def __init__(self,num1,num2):
-        self.num1=num1
-        self.num2=num2
-    def add(self):
-        return self.num1+self.num2
-    def sub(self):
-        return self.num1*self.num2
-    def mult(self):
-        return self.num1*self.num2
-    def division(self):
-        assert (self.num2!=0),"division is not possible to divide by zero"
-        return self.num1/self.num2
-n1=int(input())
-n2=int(input())
-ob=Number(n1,n2)
-try:
-    print(n1,'/',n2,'=',ob.division(),sep='')
-except AssertionError as obj:
-    print(obj)
-print(n1,'+',n2,'=',ob.add(),sep='')
-print(n1,'-',n2,'=',ob.sub(),sep='')
-print(n1,'*',n2,'=',ob.mult(),sep='')
-print(n1,'/',n2,'=',ob.division(),sep='')
+class Employee:
+    empCount=0
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+        Employee.empCount +=1
+    def displayCount(self):
+        print("Total Employee {0}" .format(Employee.empCount))
+    def displayEmployee(self):
+        print("name: ", self.name, ",salary:",self.salary)
+emp1=Employee("sabiha",50000)
+emp1.displayEmployee()
+emp1.salary=17000
+emp1.experiance=3
+emp1.displayEmployee()
+emp1.name = 'sabi'
+emp1.displayEmployee()
+print(emp1.experiance)
+#del emp1.salary
+emp1.displayEmployee()

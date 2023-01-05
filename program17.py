@@ -1,21 +1,16 @@
-class Rectangle:
-    pi=27/7
-    def __init__(self,length,width):
-        self.length=length
-        self.width=width
-    def calculateArea(self):
-        temp=self.length*self.width
-        return temp
-    def calculatePerimeter(self):
-        temp=2*(self.length + self.width)
-        return temp
-    
-l=int(input())
-w=int(input())
-
-ob=Rectangle(l,w)
-area=ob.calculateArea()
-peri=ob.calculatePerimeter()
-print('area of rectanle is',area)
-print('perimeter of Rectangle is',peri)
-
+class Point:
+    def __init__(self,x=0,y=0):
+        self.x=x
+        self.y=y
+    def  __del__(self):
+        class_name=self.__class__.__name__
+        print(class_name,"destroyed")
+##pt1 = Point()
+##pt2 = pt1
+##pt3 = pt1
+##print(id(pt1), id(pt2) ,id(pt3))
+##del pt1
+##del pt2
+##del pt3
+##pt11 = point(6,7)
+##del pt11

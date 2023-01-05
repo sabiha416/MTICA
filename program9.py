@@ -1,18 +1,18 @@
-class Cat:
-    def __init__(self,color,legs):
-        self.color=color
-        self.legs=legs
-    def __str__(self):
-        temp="cat is "+self.color +'color' +'and has'+str(self.legs)+str(self.color)
-        return temp
+class A:
+    def first_Method(self):
+        print("Method of class A...")
+class B:
+    def first_Method(self):
+        print("Method of class B...")
 
-if __name__=="__main__":
-    pet1=Cat("ginger",4)
-    print(pet1.legs)
-    print(pet1.color)
-    print(pet1)
+class C(A,B):
+    def third_Method(self):
+        print("Method of class C...")
+        
+         
 
-    pet2=Cat("brown",3)
-    print(pet2.legs)
-    print(pet2.color)
-    print(pet2)
+if __name__=='__main__':
+    ob=C()
+    ob.first_Method()
+    ob.third_Method()
+

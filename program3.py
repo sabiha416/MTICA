@@ -1,6 +1,25 @@
-set1 = {10,20,30,40,50}
-set2 = {30,40,50,60,70}
+class Dog:
+    price=400  #Class attribute created by variables within
+           #the body of the class
+    def __init__(self,name,color):
+        self.color=color
+        self.name=name
+    def bark(self):
+        print("woof")
+        print(self.name, "has",self.price,"price and its color is",self.color)
+        
 
-print(set1.union(set2))
-#remove duplicates.
-print(set1^set2)
+if __name__=="__main__":
+    pet1=Dog("Tommy","Brown")
+    pet2=Dog("sheru","white")
+    pet1.bark()
+    pet2.bark()
+    print(pet1.price)
+    print(pet2.price)
+    print(Dog.price)
+    Dog('abc','blue').bark()
+
+
+
+
+

@@ -1,19 +1,22 @@
-class Circle:
-    pi=27/7
-    def __init__(self,radius):
-        self.radius=radius
-    def calculateArea(self):
-        temp=self.pi*self.radius**2
-        return temp
-    def calculatePerimeter(self):
-        temp=2*self.pi*self.radius
-        return temp
-    
-r=int(input())
-
-ob=Circle(r)
-area=ob.calculateArea()
-peri=ob.calculatePerimeter
-print('area of circle with radius',r,'is',area)
-print('perimeter of circle with radius',r,'is',peri)
-
+class Employee:
+    empCount=0
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+        Employee.empCount +=1
+    def displayCount(self):
+        print("Total Employee %d" % Employee.empCount)
+    def displayEmployee(self):
+        print("name: ", self.name, ",salary:",self.salary)
+emp1=Employee("sabiha",9999)
+emp1.displayEmployee()
+print("is salary an attribute:",hasattr(emp1,'salary'))
+print(getattr(emp1,'salary'))
+setattr(emp1,'salary',7000)
+print("Modified salary",getattr(emp1,'salary'))
+print(hasattr(emp1,'desg'))
+setattr(emp1,'desg','manager')
+print(hasattr(emp1,'desg'))
+print("Added Attribute",getattr(emp1,'desg'))
+delattr(emp1,'salary')
+print("is salary an attribute:",hasattr(emp1,'salary'))

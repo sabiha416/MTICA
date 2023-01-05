@@ -1,4 +1,20 @@
-set1 = {10,20,30,40,50}
-set2 = {30,40,50,60,70}
+class Wolf:
+    def __init__(self,name,color):
+        self.color=color
+        self.name=name
+    def bark(self):
+        print("Grr...")
+        
+class Dog(Wolf):
+    def bark(self):
+        print("Woof")
 
-print(set1.symmetric_difference(set2))
+
+pet1=Dog("Tommy","Brown")
+pet1.bark()
+pet2=Wolf("jimmy","grey")
+pet2.bark()
+Dog("abc","xyz").bark()
+   
+
+
