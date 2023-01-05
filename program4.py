@@ -1,21 +1,4 @@
-import math
-def checkPrimeNumber(num):
-    if num<1:
-        return 0
-    if num==1 or num==2 or num==3:
-        return num
-    count=int(math.sqrt(num))+1
-    for i in range(2,count):
-        if num%i==0:
-            return 0
-    return num
-start=int(input())
-stop=int(input())
-lst=[]
-for i in range(start,stop+1):
-    if checkPrimeNumber(i):
-        lst.append(checkPrimeNumber(i))
-
-    
-print(*lst)
-print(len(lst))
+s0 ="*\t*\n**\t**\n***\t***\n"
+s1 = "I said, \"This is a valid string.\""
+print("s0:",s0)
+print("s1:",s1)

@@ -1,9 +1,11 @@
-def replace3by5(n):
-    n=str(n)
-    n=n.replace('3','.')
-    n=n.replace('5','3')
-    n=n.replace('.','5')
-    return n
-
-inp=int(input())
-print(replace3by5(inp))
+'abc' 'def'
+'abc' + 'def'
+'abc' + 'def'
+x='abc'
+y='def'
+x+y
+#xy
+s1='abc'*4
+s1
+s2='abc '*4
+print(s2)
