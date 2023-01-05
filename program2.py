@@ -1,14 +1,18 @@
-def Factorial(num):
-    assert(num>=0),"factorial of negative is not defined!"
-    if num==0:
-        return 1
-    else:
-        return num*Factorial(num-1)
+def printSeriesDecreasing(ch,n):
+    assert isinstance(ch,str),"first argument should be string"
+    assert isinstance(n,int),"second argument should be string"
+
+    for i in range(n,0,-1):
+        print(ch*i)
+    return None
+
+
+
+inpch=input("Enter a charecter:")
+inpNum=int(input("Enter a no:"))
+
+print('-'*40)
 try:
-    print(Factorial(-45))
-except Exception as obj:
-    print(obj)
-try:
-    print(Factorial(45))
-except Exception as obj:
-    print(obj)        
+    print(printSeriesDecreasing(inpch,inpNum))
+except AssertionError as obj:
+    print(ob)

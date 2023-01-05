@@ -1,10 +1,25 @@
-num1=int(input("Enter a number:"))
-num2=int(input("Enter a number:"))
+def printDay(dn):
+    if (dn==1):
+        return "MONDAY"
+    elif(dn==2):
+        return "TUESDAY"
+    elif(dn==3):
+        return "WEDNESDAY"
+    elif(dn==4):
+        return "THURSDAY"
+    elif(dn==5):
+        return "FRIDAY"
+    elif(dn==6):
+        return "SATURDAY"
+    elif(dn==7):
+        return "SUNDAY"
+    
+    else:
+        return "invalid"
 
-try:
-    res=num1/num2
-except ZeroDivisionError:
-    print("Division by zero not allowed")
-else:
-    print(num1,'/' ,num2, '=',res)
-print('thanks')
+
+
+
+for i in range(3):
+    inpNum=int(input())
+    print(printDay(inpNum))

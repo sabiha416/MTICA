@@ -1,17 +1,10 @@
-def div(a,b):       
-    assert (b!=0),"Division by zero is not defined"
-    return a/b
+def printSeries(n):
+    num=1
+    for i in range(1,n+1):
+        for j in range(i):
+            print(i,end='')
+            num+=1
+    return None
 
-try:
-    print (div(55,0))
-except AssertionError as obj:
-    print(obj)
-try:
-    print (div(20,3))
-except AssertionError as obj:
-    print(obj)
-try:
-    print (div(100,20))
-except AssertionError as obj:
-    print(obj)
-
+inpNum=int(input())
+printSeries(inpNum)

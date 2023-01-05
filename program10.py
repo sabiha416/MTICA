@@ -1,17 +1,12 @@
-def checkEvenOdd(num1):
-    assert(num1>0),"Negative numbers"
-    if num1%2==0:
-        return "Even"
-    else:
-        return "Odd"
+x=10
+y=4
+print('x=',x,'y=',y,'x&y=',x&y)
+print('x=',x,'y=',y,'x|y=',x|y)
+print('x=',x,'~x',~x)
+print('x=',x,'y=',y,'x^y=',x^y)
+print('x=',x,'x>>2',x>>2)
+print('x=',x,'x<<2',x<<2)
 
 
-for i in range(3):
-    num=int(input("Enter a no:"))
-    try:
-        print(num,"is",checkEvenOdd(num))
-    except AssertionError as ob:
-        print(ob)
-        
 
 

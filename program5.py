@@ -1,24 +1,11 @@
-def div(a,b):
-    assert( isinstance(a,int) or isinstance(a,float)),\
-            'first Argument should be either Integer or float'
-    assert( isinstance(b,int) or isinstance(b,float)),\
-            'second Argument should be either Integer or float'       
-    assert (b!=0),"Division by zero is not defined"
-    return a/b
+def printSeries(ch,n):
+    sp='.'
+    for i in range(0,n):
+        print(sp*(n-i-1) +ch*(2*i+1)+sp*(n-i-1))
+    return None
 
-try:
-    print (div(55,0))
-except AssertionError as obj:
-    print(obj)
-try:
-    print (div(20,3))
-except AssertionError as obj:
-    print(obj)
-try:
-    print (div('hello',20))
-except AssertionError as obj:
-    print(obj)
-try:
-    print (div(20,'hello'))
-except AssertionError as obj:
-    print(obj)
+
+
+inpch=input()
+inpNum=int(input())
+printSeries(inpch,inpNum)
