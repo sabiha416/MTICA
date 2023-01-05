@@ -1,18 +1,9 @@
-sample_dict = {
-    "name": "kelly",
-    "age":25,
-    "salary":8000,
-    "city": "New york"}
-keys=["name","salary"]
+set1 = {10,20,30,40,50}
+set2 = {30,40,50,60,70}
 
-##res=dict()
-##for k in keys:
-##    res.update({k: sample_dict[k]})
-##print(res)
-##
-##
+##print(set1.symmetric_difference_update(set2))
+##print(set1)
 
 
-for k in keys:
-    sample_dict.pop(k)
-print(sample_dict)
+set1.intersection_update(set2)
+print(set1)

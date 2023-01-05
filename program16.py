@@ -1,11 +1,19 @@
-def printPattern(ch,n):
-    assert (n>0),'invalid'
-    for i in range(n+1):
-        print(ch*i)
+class Circle:
+    pi=27/7
+    def __init__(self,radius):
+        self.radius=radius
+    def calculateArea(self):
+        temp=self.pi*self.radius**2
+        return temp
+    def calculatePerimeter(self):
+        temp=2*self.pi*self.radius
+        return temp
+    
+r=int(input())
 
-ch=input()
-n=int(input())
-try:
-    printPattern(ch,n)
-except AssertionError as ob:
-    print(ob)
+ob=Circle(r)
+area=ob.calculateArea()
+peri=ob.calculatePerimeter
+print('area of circle with radius',r,'is',area)
+print('perimeter of circle with radius',r,'is',peri)
+

@@ -1,18 +1,6 @@
-def findFrequency(s):
-    FrequencyDict=dict()
-    for i in s:
-        if i in FrequencyDict:
-            FrequencyDict[i]+=1
-        else:
-            FrequencyDict[i]=1
-    return FrequencyDict
-def formatOutput(d):
-    for i in sorted(d):
-        print(i,d[i])
-    
+set1 = {10,20,30,40,50}
+set2 = {30,40,50,60,70}
 
-
-n=int(input())
-for i in range(n):
-    inpstr=input()
-    formatOutput(findFrequency(inpstr))
+print(set1.union(set2))
+#remove duplicates.
+print(set1^set2)

@@ -1,11 +1,18 @@
-sample_dict = {
-    "name": "kelly",
-    "age":25,
-    "salary":8000,
-    "city": "New york"}
-keys=["name","salary"]
+class Cat:
+    def __init__(self,color,legs):
+        self.color=color
+        self.legs=legs
+    def __str__(self):
+        temp="cat is "+self.color +'color' +'and has'+str(self.legs)+str(self.color)
+        return temp
 
-d=dict()
-for i in sample_dict.keys()-keys:
-    d[i]=sample_dict[i]
-print(d)
+if __name__=="__main__":
+    pet1=Cat("ginger",4)
+    print(pet1.legs)
+    print(pet1.color)
+    print(pet1)
+
+    pet2=Cat("brown",3)
+    print(pet2.legs)
+    print(pet2.color)
+    print(pet2)

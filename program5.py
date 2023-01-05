@@ -1,17 +1,6 @@
+set1 = {10,20,30,40,50}
+set2 = {30,40,50,60,70}
 
-sampleDict = {
-    "class": {
-        "student": {
-             "name": "Mike",
-              "marks": {
-                  "physics":70,
-                  "history":80
-                }
-          }
-    }
-}
-
-print(sampleDict["class"]["student"]["marks"]["history"])
-
-                      
-                
+print(set1.intersection(set2))
+#remove duplicates.
+print(set1^set2)

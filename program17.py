@@ -1,11 +1,21 @@
-def printPattern(ch,n):
-    assert (n>0),'invalid'
-    for i in range(n,0,-1):
-        print(ch*i)
+class Rectangle:
+    pi=27/7
+    def __init__(self,length,width):
+        self.length=length
+        self.width=width
+    def calculateArea(self):
+        temp=self.length*self.width
+        return temp
+    def calculatePerimeter(self):
+        temp=2*(self.length + self.width)
+        return temp
+    
+l=int(input())
+w=int(input())
 
-ch=input()
-n=int(input())
-try:
-    printPattern(ch,n)
-except AssertionError as ob:
-    print(ob)
+ob=Rectangle(l,w)
+area=ob.calculateArea()
+peri=ob.calculatePerimeter()
+print('area of rectanle is',area)
+print('perimeter of Rectangle is',peri)
+

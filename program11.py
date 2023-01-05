@@ -1,7 +1,21 @@
-sample_dict={'a':100,'b':200,'c':300}
-if 200 in sample_dict.values():
-    print("200 present in a dict")
+class Dog:
+    price=400
+    def __init__(self,name,color):
+        self.color=color
+        self.name=name
+    def bark(self):
+        print("woof")
+        print(self.name, "has",self.price,"price and its color is",self.color)
+        
 
-for k,v in sample_dict.items():
-    if v==200:
-        print("for",v,"key is",k)
+if __name__=="__main__":
+    pet1=Dog("Tommy","Brown")
+    pet2=Dog("sheru","white")
+    pet1.bark()
+    pet2.bark()
+    print(pet1.price)
+    print(pet2.price)
+    print(Dog.price)
+    Dog('abc','blue').bark()
+
+
